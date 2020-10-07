@@ -6,7 +6,9 @@ app.get('/', (req, res)=>{
   res.send('sasas what')
 })
 
-app.listen(3000, ()=>{
+const port = process.env.port || 3000
+
+app.listen(port, ()=>{
   console.log('sup1');
 
 })
